@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Сat-Energy</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/stylemin.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="naviation">
+      <ul>
+        <li class="navigation__item">
+          <a href="#">
+            <div class="naviton__logo">
+              <!-- LOGO -->
+            </div>
+          </a>
+          <button class="btn btn__open" type="button"></button>
+        </li>
+        <li class="navigation__item"><a href="#">
+            ГЛАВНАЯ
+          </a></li>
+        <li class="navigation__item"><a href="#">
+            КАТАЛОГ ПРОДУКЦИИ
+          </a></li>
+        <li class="navigation__item"><a href="#">
+            ПОДБОР ПРОГРАММЫ
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="form">
+      <h2 class="form__header">Подбор программы</h2>
+      <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <div class="form__name">
+          <label class="form__name-text" for="name">Имя:*</label>
+          <input class="form__name-input" type="text" id="name" name="name" placeholder="Барсик" />
+        </div>
+        <div class="form__height">
+          <label class="form__hegiht-text" for="height">Вес (кг):*</label>
+          <input class="form__height-input" type="number" id="height" name="height" placeholder="7" />
+        </div>
+        <div class="form__age">
+          <label class="form__age-label" for="age">Возраст (лет):</label>
+          <input class="form__age-label" type="number" id="age" name="age" placeholder="7" />
+        </div>
+        <div class="form__target">
+          <label class="form__target-label"><input class="form__target-input" type="radio" name="radio" value="Похудение" checked>Похудение</label>
+          <label class="form__target-label"><input class="form__target-input" type="radio" name="radio" value="Похудение">Набор массы</label>
+          <label class="form__target-label"><input class="form__target-input" type="radio" name="radio" value="Похудение">Не знаю (Нужен ваш совет)</label>
+        </div>
+        <fieldset class="form_cat-contacts">
+          <legend>Контактные данные (владельца кота)</legend>
+          <div class="form__email">
+            <label class="form__email-label" for="email">E-mail:*</label>
+            <input class="form__name-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" />
+          </div>
+          <div class="form__tel">
+            <label class="form__tel-label" for="tel">Телефон:*</label>
+            <input class="form__name-input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" />
+          </div>
+        </fieldset>
+        <fieldset class="form_comments">
+          <legend>Комментарий</legend>
+          <textarea id="comments" placeholder="Расскажите обо всех повадках кота">
+          </textarea>
+        </fieldset>
+        <fieldset class="form_additionally">
+          <legend>Дополнительно</legend>
+          <label class="form_additionally-label"><input class="form_additionally-input" type="checkbox" name="checkbox" value="Сахарозаменитель" checked>САХАРОЗАМЕНИТЕЛЬ</label>
+          <label class="form_additionally-label"><input class="form_additionally-input" type="checkbox" name="checkbox" value="Питьевая вода" >ПИТЬЕВАЯ ВОДА</label>
+          <label class="form_additionally-label"><input class="form_additionally-input" type="checkbox" name="checkbox" value="Молоко" >МОЛОКО</label>
+          <label class="form_additionally-label"><input class="form_additionally-input" type="checkbox" name="checkbox" value="Витамины" >ВИТАМИНЫ</label>
+        </fieldset>
+        <button class="btn btn-send" type="submit">Отправить заявку</button>
+        <p>* — Обязательные поля</p>
+      </form>
+
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="contacts">
+      <div class="contacts__adress">
+        <p class="contacts__header">приглашаем к сотрудничеству дилеров!</p>
+        <address class="contacts__header">приглашаем к сотрудничеству дилеров!</address>
+        <img class="contacts__map" src="http://placehold.it/320x400" width="320" height="400" alt="#" />
+      </div>
+    </section>
+    <section class="footer__nav">
+      <ul class="footer__list">
+        <li class="footer__items">
+          <a class="footer__logo" href=""></a>
+        </li>
+        <li class="footer__items">
+          <a class="footer__vk" href=""></a>
+          <a class="footer__inst" href=""></a>
+          <a class="footer__fb" href=""></a>
+        </li>
+        <li class="footer__items">
+          <a class="footer__logo" href="">HTMLACADEMY
+            <img class="footer__academy-logo" src="http://placehold.it/27x34" width="27" height="34" alt="#" />
+          </a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+  <!-- <script src="js/scriptmin.js"></script> -->
+</body>
+
+</html>
