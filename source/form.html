@@ -7,22 +7,21 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/stylemin.css" rel="stylesheet">
 </head>
-
 <body>
   <header class="header-page">
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__item"><a class="logo navigation__logo" href="#"></a></li>
-        <li class="navigation__item"><a href="#">ГЛАВНАЯ</a></li>
+        <li class="navigation__item"><a href="index.html">ГЛАВНАЯ</a></li>
         <li class="navigation__item"><a href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a></li>
-        <li class="navigation__item"><a href="form.html">ПОДБОР ПРОГРАММЫ</a></li>
+        <li class="navigation__item"><a href="#">ПОДБОР ПРОГРАММЫ</a></li>
       </ul>
     </nav>
     <button class="btn-close navigation__btn-close" type="button"></button>
   </header>
   <main class="main-page">
     <section class="form">
-      <h2 class="form__header">Подбор программы</h2>
+      <h1 class="form__header">Подбор программы</h1>
       <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form method="post" action="https://echo.htmlacademy.ru">
         <div class="form__name">
@@ -38,41 +37,41 @@
           <input class="form__age-label" type="number" id="age" name="age" placeholder="7" />
         </div>
         <div class="form__target">
-          <label class="form__target-label"><input class="form__target-input" type="radio" name="radio" value="Похудение" checked>Похудение</label>
-          <label class="form__target-label"><input class="form__target-input" type="radio" name="radio" value="Похудение">Набор массы</label>
-          <label class="form__target-label"><input class="form__target-input" type="radio" name="radio" value="Похудение">Не знаю (Нужен ваш совет)</label>
+          <label class="form__label" for="losing-weight">Похудение</label><input class="form__input" id="losing-weight" type="radio" name="radio" value="Похудение" checked>
+          <label class="form__label" for="weight-gain">Набор массы</label><input class="form__input" id="weight-gain" type="radio" name="radio" value="Похудение">
+          <label class="form__label" for="advice">Не знаю (Нужен ваш совет)</label><input class="form__input" id="advice" type="radio" name="radio" value="Похудение">
         </div>
-        <fieldset class="form_cat-contacts">
+        <fieldset class="form__cat-contacts">
           <legend>Контактные данные (владельца кота)</legend>
           <div class="form__email">
-            <label class="form__email-label" for="email">E-mail:*</label>
-            <input class="form__name-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" />
+            <label class="form__label" for="email">E-mail:*</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" />
           </div>
           <div class="form__tel">
-            <label class="form__tel-label" for="tel">Телефон:*</label>
-            <input class="form__name-input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" />
+            <label class="form__label" for="tel">Телефон:*</label>
+            <input class="form__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" />
           </div>
         </fieldset>
-        <fieldset class="form_comments">
+        <fieldset class="form__comments">
           <legend>Комментарий</legend>
           <textarea id="comments" placeholder="Расскажите обо всех повадках кота">
           </textarea>
         </fieldset>
-        <fieldset class="form_additionally">
+        <fieldset class="form__additionally">
           <legend>Дополнительно</legend>
-          <label class="form_additionally-label"><input class="form_additionally-input" type="checkbox" name="checkbox" value="Сахарозаменитель" checked>САХАРОЗАМЕНИТЕЛЬ</label>
-          <label class="form_additionally-label"><input class="form_additionally-input" type="checkbox" name="checkbox" value="Питьевая вода" >ПИТЬЕВАЯ ВОДА</label>
-          <label class="form_additionally-label"><input class="form_additionally-input" type="checkbox" name="checkbox" value="Молоко" >МОЛОКО</label>
-          <label class="form_additionally-label"><input class="form_additionally-input" type="checkbox" name="checkbox" value="Витамины" >ВИТАМИНЫ</label>
+          <label class="form__additionally-label" for="sugar-substitute">САХАРОЗАМЕНИТЕЛЬ</label><input class="form__additionally-input" id="sugar-substitute" type="checkbox" name="checkbox" value="Сахарозаменитель" checked>
+          <label class="form__additionally-label" for="water">ПИТЬЕВАЯ ВОДА</label><input class="form__additionally-input" id="water" type="checkbox" name="checkbox" value="Питьевая вода">
+          <label class="form__additionally-label" for="milk">МОЛОКО</label><input class="form__additionally-input" id="milk" type="checkbox" name="checkbox" value="Молоко">
+          <label class="form__additionally-label" for="vitamins">ВИТАМИНЫ</label><input class="form__additionally-input" id="vitamins" type="checkbox" name="checkbox" value="Витамины">
         </fieldset>
-        <button class="btn btn-send" type="submit">Отправить заявку</button>
-        <p>* — Обязательные поля</p>
+        <button class="btn-confirm form__btn-confirm" type="submit">Отправить заявку</button>
+        <p class="forn__requried">* — Обязательные поля</p>
       </form>
-
     </section>
   </main>
   <footer class="footer-page">
     <section class="contacts">
+      <h1 class="contacts__header header__hidden">Контакты</h1>
       <p class="contacts__header">приглашаем к сотрудничеству дилеров!</p>
       <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       <div class="contacts__map">
@@ -80,6 +79,7 @@
       </div>
     </section>
     <section class="footer__nav">
+      <h1 class="footer__header header__hidden">Мы в социальных сетях</h1>
       <a class="logo footer__logo" href=""></a>
       <ul class="footer__list">
         <li class="footer__item"><a class="social-btn vk-btn" href=""></a></li>
