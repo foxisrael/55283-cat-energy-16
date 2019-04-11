@@ -1,0 +1,63 @@
+// //body
+//
+// html {
+//   box-sizing: border-box;
+//   padding: 0;
+// }
+//
+// *,
+// *:after,
+// *:before {
+//   box-sizing: inherit;
+//   margin: 0;
+// }
+//
+// body {
+//   font-family: &text-font-size;
+//   margin: 0 auto;
+//   text-align: center;
+// }
+//
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+//
+// h2 {
+//   font-family: &header-font-family;
+//   font-size: @h2-font-size;
+//   line-height: &h2-line-height;
+//   color: @color-darkblue;
+// }
+//
+// h3 {
+//   font-size:  @h3-font-size;
+//   font-family: &header-font-family;
+//   line-height: &h3-line-height;
+//   font-weight: bold;
+// }
+//
+// p {
+//   font-size: &text-font-size;
+//   line-height: &text-lint-height;
+//   color: &color-black;
+// }
+//
+// a {
+//   font-family: &text-font-family
+//   text-decoration: none;
+// }
+//
+// button {
+//   border: 0;
+//   background: none;
+//   outline: none;
+//   cursor: pointer;
+// }
+//
+// .wrapper {
+//   width: 100%;
+//   max-width: 960px;
+//   margin: 0 auto;
+//   padding: 0 20px;
+// }
